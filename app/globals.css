@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --font-sans: var(--font-poppins), 'Poppins', system-ui, -apple-system, sans-serif;
+  --font-heading: var(--font-sans);
+
+  --color-pink: #ff003d;
+  --color-blush: #fff1f3;
+  --color-soft: #fff8f8;
+  --color-muted: #5e5b5d;
+  --color-line: #ffd9df;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #1b1b1d;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
