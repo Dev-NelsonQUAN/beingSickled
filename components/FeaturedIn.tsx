@@ -1,88 +1,87 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
 interface MediaFeature {
-  id: string
-  title: string
-  subtitle: string
-  linkText: string
-  href: string
-  logoSrc: string
-  bgColor?: string
+  id: string;
+  title: string;
+  subtitle: string;
+  linkText: string;
+  href: string;
+  logoSrc: string;
+  bgColor?: string;
 }
 
 const mediaFeatures: MediaFeature[] = [
   {
-    id: 'bbc-igbo',
-    title: 'BBC News (IGBO)',
-    subtitle: 'Feature story and interview',
-    linkText: 'View Article',
-    href: '#',
-    logoSrc: '/BBC_Igbo.avif',
+    id: "bbc-igbo",
+    title: "BBC News (IGBO)",
+    subtitle: "Feature story and interview",
+    linkText: "View Article",
+    href: "#",
+    logoSrc: "/BBC_Igbo.avif",
   },
   {
-    id: 'bbc-pidgin',
-    title: 'BBC News (PIDGIN)',
-    subtitle: 'Feature story and interview',
-    linkText: 'Watch Here',
-    href: '#',
-    logoSrc: '/BBC_Pidgin.avif',
+    id: "bbc-pidgin",
+    title: "BBC News (PIDGIN)",
+    subtitle: "Feature story and interview",
+    linkText: "Watch Here",
+    href: "#",
+    logoSrc: "/BBC_Pidgin.avif",
   },
   {
-    id: 'punch',
-    title: 'Punch Newspapers',
-    subtitle: 'Feature story and interview',
-    linkText: 'View Article',
-    href: '#',
-    logoSrc: '/Punch_Newspapers.avif',
+    id: "punch",
+    title: "Punch Newspapers",
+    subtitle: "Feature story and interview",
+    linkText: "View Article",
+    href: "#",
+    logoSrc: "/Punch_Newspapers.avif",
   },
   {
-    id: 'premium-times',
-    title: 'Premium Times',
-    subtitle: 'Feature story and interview',
-    linkText: 'View Article',
-    href: '#',
-    logoSrc: '/Premium_Times.avif',
+    id: "premium-times",
+    title: "Premium Times",
+    subtitle: "Feature story and interview",
+    linkText: "View Article",
+    href: "#",
+    logoSrc: "/Premium_Times.avif",
   },
   {
-    id: 'bonews',
-    title: 'BoNews',
-    subtitle: 'Feature story',
-    linkText: 'View Article',
-    href: '#',
-    logoSrc: '/BO_News.avif',
+    id: "bonews",
+    title: "BoNews",
+    subtitle: "Feature story",
+    linkText: "View Article",
+    href: "#",
+    logoSrc: "/BO_News.avif",
   },
   {
-    id: 'edutorial',
-    title: 'Edutorial',
-    subtitle: 'Feature story',
-    linkText: 'View Article',
-    href: '#',
-    logoSrc: '/Edutorial.avif',
+    id: "edutorial",
+    title: "Edutorial",
+    subtitle: "Feature story",
+    linkText: "View Article",
+    href: "#",
+    logoSrc: "/Edutorial.avif",
   },
   {
-    id: 'scholarship-region',
-    title: 'Scholarship Region',
-    subtitle: 'Feature story',
-    linkText: 'View Article',
-    href: '#',
-    logoSrc: '/Scholarship_Region.avif',
+    id: "scholarship-region",
+    title: "Scholarship Region",
+    subtitle: "Feature story",
+    linkText: "View Article",
+    href: "#",
+    logoSrc: "/Scholarship_Region.avif",
   },
   {
-    id: 'strong-ones',
-    title: 'The Strong Ones Amongst Us',
-    subtitle: 'Featured participant in an award-winning documentary',
-    linkText: 'Watch Here',
-    href: '#',
-    logoSrc: '/TSOAU.avif',
+    id: "strong-ones",
+    title: "The Strong Ones Amongst Us",
+    subtitle: "Featured participant in an award-winning documentary",
+    linkText: "Watch Here",
+    href: "#",
+    logoSrc: "/TSOAU.avif",
   },
-]
+];
 
 export function FeaturedIn() {
   return (
     <section className="w-full bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
-        
         <div className="flex flex-col items-center mb-12">
           <h2 className="text-xl sm:text-2xl font-extrabold text-[#111111] tracking-wider uppercase">
             FEATURED IN
@@ -109,7 +108,7 @@ export function FeaturedIn() {
                 <h3 className="text-sm font-bold text-[#111111] leading-tight truncate">
                   {item.title}
                 </h3>
-                
+
                 <p className="text-xs text-gray-500 mt-1 leading-snug line-clamp-2">
                   {item.subtitle}
                 </p>
@@ -124,8 +123,7 @@ export function FeaturedIn() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
-  )
+  );
 }
