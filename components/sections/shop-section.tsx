@@ -1,18 +1,16 @@
-import { ArrowRight, ShoppingBag } from 'lucide-react'
+import { ArrowRight, ShoppingBag } from "lucide-react";
 
 export function ShopSection() {
   return (
     <section id="shop" className="relative w-full bg-white overflow-hidden">
-{/*       
+      {/*       
       <div 
         className="absolute inset-0 opacity-[0.03] pointer-events-none bg-repeat bg-[length:120px]"
         style={{ backgroundImage: 'url("/shopping-bag-icon.svg")' }}
       /> */}
 
       <div className="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-12 items-end gap-6 pl-[5%] pr-0 relative z-10">
-        
         <div className="lg:col-span-5 flex flex-col items-center lg:items-start py-12 lg:py-20 pr-6">
-          
           <div className="inline-flex items-center gap-2 text-pink text-xs sm:text-sm font-extrabold tracking-[0.12em] uppercase mb-4">
             <span>SHOPUSEFULLY</span>
             <span className="w-6 h-0.5 bg-pink/40" />
@@ -25,50 +23,50 @@ export function ShopSection() {
           </h2>
 
           <p className="text-[#3a393a] text-base sm:text-[17px] leading-[1.6] mb-8 font-medium max-w-120 text-center lg:text-left">
-            Instead of searching endlessly online, our partner store, ShopUsefully brings together products and tools that many people living with sickle cell or other chronic illnesses find genuinely useful.
+            Instead of searching endlessly online, our partner store,
+            ShopUsefully brings together products and tools that many people
+            living with sickle cell or other chronic illnesses find genuinely
+            useful.
           </p>
 
-          <a 
-            href="https://shopusefully.com" 
-            target="_blank" 
+          <a
+            href="https://shopusefully.com"
+            target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-3 bg-pink hover:bg-[#e00036] text-white font-bold text-base px-8 py-4 rounded-md shadow-sm transition-all"
+            className="inline-flex items-center justify-center gap-2 md:gap-3 bg-pink hover:bg-[#e00036] text-white font-bold text-[14px] md:text-base px-8 py-4 rounded-md shadow-sm transition-all"
           >
-            <ShoppingBag className="w-5 h-5" />
+            <ShoppingBag className="w-3.5 md:w-5 h-3.5 md:h-5" />
             <span>Explore Shopusefully</span>
-            <ArrowRight className="w-5 h-5" />
+            <ArrowRight className="w-3.5 md:w-5 h-3.5 md:h-5" />
           </a>
-
         </div>
 
         <div className="lg:col-span-7 flex justify-end items-end w-full pl-0">
-          <img 
-            src="/shopUsefully.avif" 
-            alt="ShopUsefully app preview and essential sickle cell products" 
+          <img
+            src="/shopUsefully.avif"
+            alt="ShopUsefully app preview and essential sickle cell products"
             className="w-full max-w-none lg:w-[108%] xl:w-[115%] h-auto block align-bottom -mb-px"
           />
         </div>
-
       </div>
-
     </section>
-  )
+  );
 }
 // import { ArrowRight, ShoppingBag } from 'lucide-react'
 
 // export function ShopSection() {
 //   return (
 //     <section id="shop" className="relative w-full bg-[#fff0f2]/0.2 py-16 sm:py-20 lg:py-24 px-[5%] overflow-hidden">
-      
+
 //       <div
 //         className="absolute inset-0 opacity-[0.03] pointer-events-none bg-repeat bg-[length:120px]"
 //         style={{ backgroundImage: 'url("/shopping-bag-icon.svg")' }}
 //       />
 
 //       <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 items-center gap-10 lg:gap-8 relative z-10">
-        
+
 //         <div className="lg:col-span-5 flex flex-col items-start pr-0 lg:pr-4">
-          
+
 //           <div className="inline-flex items-center gap-2 text-pink text-xs sm:text-sm font-extrabold tracking-[0.12em] uppercase mb-4">
 //             <span>SHOPUSEFULLY</span>
 //             <span className="w-6 h-[2px] bg-pink/40" />
@@ -84,9 +82,9 @@ export function ShopSection() {
 //             Instead of searching endlessly online, our partner store, ShopUsefully brings together products and tools that many people living with sickle cell or other chronic illnesses find genuinely useful.
 //           </p>
 
-//           <a 
-//             href="https://shopusefully.com" 
-//             target="_blank" 
+//           <a
+//             href="https://shopusefully.com"
+//             target="_blank"
 //             rel="noopener noreferrer"
 //             className="inline-flex items-center justify-center gap-3 bg-pink hover:bg-[#e00036] text-white font-bold text-base px-8 py-4 rounded-md shadow-sm transition-all"
 //           >
@@ -99,9 +97,9 @@ export function ShopSection() {
 
 //         <div className="lg:col-span-7 relative flex justify-center lg:justify-end items-center w-full ">
 //           <div className="relative w-full max-w-[680px] lg:max-w-none ">
-//             <img 
-//               src="/shopUsefully.avif" 
-//               alt="ShopUsefully app preview and essential sickle cell products" 
+//             <img
+//               src="/shopUsefully.avif"
+//               alt="ShopUsefully app preview and essential sickle cell products"
 //               className="w-full h-full object-contain drop-shadow-md rounded-xl"
 //             />
 //           </div>
