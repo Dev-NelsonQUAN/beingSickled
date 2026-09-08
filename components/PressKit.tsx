@@ -17,7 +17,7 @@ const pressKitData: PressKitCard[] = [
     title: 'Logo',
     description: 'Our logo in various formats for media use.',
     items: ['PNG', 'JPG', 'SVG'],
-    downloadUrl: '/press-kit/logo-assets.zip',
+    downloadUrl: 'https://drive.google.com/drive/folders/1dZQVDH9a_H0upbnmKslyPeFj299FCLk_',
   },
   {
     id: 'media-assets',
