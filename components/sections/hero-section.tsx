@@ -29,7 +29,6 @@ export function HeroSection() {
       
       <div className="w-full px-[5%] pt-6 lg:pt-4 pb-28 lg:pb-24 grid grid-cols-1 lg:grid-cols-12 items-center gap-6 lg:gap-8 h-full">
         
-        {/* LEFT COLUMN */}
         <div className="lg:col-span-5 flex flex-col items-center lg:items-start z-20">
           <h1 className="text-4xl sm:text-5xl lg:text-[50px] xl:text-[62px] font-bold tracking-[0.5px] leading-[1.05] text-[#1b1b1d] mb-4 lg:mb-5 text-center lg:text-left">
             Awareness.<br />
