@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: 'Being Sickled',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Being Sickled Health Foundation',
@@ -71,8 +71,9 @@ export const metadata: Metadata = {
     creator: '@beingsickled',
   },
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+   icon: '/BSFavIcon.png',
+    shortcut: '/BSFavIcon.png',
+    apple: '/BSFavIcon.png',
   },
   robots: {
     index: true,
@@ -133,7 +134,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <Header />
-        <main className="overflow-x-hidden w-full min-h-screen">
+        <main className="overflow-x-hidden w-full">
           {children}
         </main>
         <Footer />
