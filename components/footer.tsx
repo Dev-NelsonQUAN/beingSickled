@@ -14,14 +14,14 @@ const QUICK_LINKS = [
 ]
 
 const SOCIAL_LINKS = [
-  { name: "Instagram", icon: "/mdi_instagram.png", href: "#" },
-  { name: "TikTok", icon: "/mdi_tiktok.png", href: "#" },
-  { name: "Facebook", icon: "/mdi_facebook.png", href: "#" },
-  { name: "X", icon: "/mdi_x.png", href: "#" },
-  { name: "YouTube", icon: "/mdi_youtube.png", href: "#" },
-  { name: "LinkedIn", icon: "/mdi_linkedin.png", href: "#" },
+  { name: "Instagram", icon: "/mdi_instagram.png", href: "https://www.instagram.com/beingsickled" },
+  { name: "TikTok", icon: "/mdi_tiktok.png", href: "https://www.tiktok.com/@beingsickled" },
+  { name: "Facebook", icon: "/mdi_facebook.png", href: "https://www.facebook.com/share/1BxhAxQojA" },
+  { name: "X", icon: "/mdi_x.png", href: "https://x.com/beingsickled" },
+  { name: "YouTube", icon: "/mdi_youtube.png", href: "https://youtube.com/@beingsickled" },
+  { name: "LinkedIn", icon: "/mdi_linkedin.png", href: "https://www.linkedin.com/company/beingsickled/" },
 ]
-
+ 
 export function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -119,9 +119,9 @@ export function Footer() {
                 key={social.name}
                 href={social.href}
                 aria-label={social.name}
-                className="w-10 h-10 rounded-full border border-[#E61F4D] grid place-items-center cursor-pointer hover:bg-white transition-colors group shrink-0"
+                className="w-7 md:w-10 h-7 md:h-10 rounded-full border border-[#E61F4D] grid place-items-center cursor-pointer hover:bg-white transition-colors group shrink-0"
               >
-                <div className="relative w-5 h-5">
+                <div className="relative w-4 md:w-5 h-4 md:h-5">
                   <Image
                     src={social.icon}
                     alt={social.name}
@@ -133,7 +133,7 @@ export function Footer() {
             ))}
           </div>
 
-          <div className="bg-[#f0f0f0] text-[#1b1b1d] p-5 rounded-lg">
+          <div className="bg-[#f0f0f0] text-[#1b1b1d] p-3 md:p-5 rounded-lg">
             <div className="flex items-center gap-2 font-bold mb-2 text-sm">
               <Heart className="text-[#E61F4D] w-5 h-5 shrink-0 fill-[#E61F4D]" />
               <span>BE PART OF THE MOVEMENT</span>
@@ -153,7 +153,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-[#383838] text-center p-5 text-gray-400 text-xs">
+      <div className="border-t border-[#383838] text-center p-2 md:p-5 text-gray-400 text-xs">
         © {currentYear} Being Sickled Health Foundation. All rights reserved.
       </div>
     </footer>
